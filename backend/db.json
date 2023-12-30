@@ -1,0 +1,26 @@
+{
+  "courses": [
+    {
+      "course1": "Math",
+      "course2": "Physics",
+      "mechcourses": [
+        {
+          "course4": "Math",
+          "course5": "Physics"
+        },
+        {
+          "course6": "Math",
+          "course7": "Physics"
+        },
+        {
+          "course8": "Math",
+          "course9": "Physics"
+        }
+      ]
+    },
+    {
+      "course1": "Math",
+      "course2": "Physics"
+    }
+  ]
+}

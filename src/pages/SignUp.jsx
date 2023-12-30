@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GlobalContext = () => {
+const SignUp = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const GlobalContext = () => {
   )
 }
 
-export default GlobalContext;
+export default SignUp

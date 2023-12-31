@@ -1,26 +1,279 @@
 {
-  "courses": [
+  "Teaching-Staff": [
     {
-      "course1": "Math",
-      "course2": "Physics",
-      "mechcourses": [
-        {
-          "course4": "Math",
-          "course5": "Physics"
-        },
-        {
-          "course6": "Math",
-          "course7": "Physics"
-        },
-        {
-          "course8": "Math",
-          "course9": "Physics"
-        }
-      ]
+      "Teacher-name": "Hemant Pawar",
+      "id": "Alpha-001",
+      "department": "Computer",
+      "designation": "Associate Professor",
+      "email": "hemantpawar@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "image": "https://www.cs.iitk.ac.in/users/prakashk/images/Paras2018.jpg",
+      "phone": "+91-431-2376520",
+      "specialization": "Artificial Intelligence",
+      "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
+      "office_hour": "Friday 3:30 pm - 4:30 pm",
+      "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
     },
     {
-      "course1": "Math",
-      "course2": "Physics"
+      "Teacher-name": "Prasad Kadam",
+      "id": "Alpha-001",
+      "department": "Computer",
+      "designation": "Associate Professor",
+      "email": "Prasadk@iitk.ac.in",
+      "DOJ": "25-02-2020",
+      "image": "https://www.cs.iitk.ac.in/users/prakashk/images/Paras2018.jpg",
+      "phone": "+91-431-2376520",
+      "specialization": "Artificial Intelligence",
+      "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
+      "office_hour": "Friday 3:30 pm - 4:30 pm",
+      "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
+    },
+    {
+      "Teacher-name": "Yogita Nikam",
+      "id": "Alpha-003",
+      "department": "Civil",
+      "designation": "Associate Professor",
+      "email": "Yogita Nikam@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "image": "https://www.cs.iitk.ac.in/users/prakashk/images/Paras2018.jpg",
+      "phone": "+91-431-2376520",
+      "specialization": "Artificial Intelligence",
+      "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
+      "office_hour": "Friday 3:30 pm - 4:30 pm",
+      "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
+    }
+  ],
+  "Non-Teaching-staff": [
+    {
+      "staff-name": "VIkram Koli",
+      "id": "alpha-NS-001",
+      "role": "Librarian",
+      "contact no.": "+91-431-2376520",
+      "Email ID": "VikramKoli@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "Designation": "Library Assistant",
+      "Department": "Library",
+      "Office Hour": "Monday to Friday from 10 am to 6 pm",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
+    },
+    {
+      "staff-name": "wasim sayyed",
+      "id": "alpha-NS-002",
+      "role": "Mech-lab-Assistant",
+      "contact no.": "+91-431-2376520",
+      "Email ID": "wasimsayyed@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "Designation": "Mech Lab Assistant",
+      "Department": "Mechanical",
+      "Office Hour": "Monday to Friday from 10 am to 6 pm",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
+    },
+    {
+      "staff-name": "Mangesh Moharkar",
+      "id": "alpha-NS-005",
+      "role": "Electrical-lab-Assistant",
+      "contact no.": "+91-431-2376520",
+      "Email ID": "mangeshm@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "Designation": "Electrical Lab Assistant",
+      "Department": "Electrical",
+      "Office Hour": "Monday to Friday from 10 am to 6 pm",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
+    }
+  ],
+  "Electrical": [
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    }
+  ],
+  "Mechanical": [
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    }
+  ],
+  "Civil": [
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    }
+  ],
+  "Computer": [
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    }
+  ],
+  "IT": [
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    }
+  ],
+  "ECE": [
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
+    },
+    {
+      "Name": "Saurabh Jha",
+      "ID": "beta-EL-001",
+      "Year": "Final Year",
+      "Admission-Date": "20-12-2020",
+      "Contact No.": "+91-9999999999",
+      "Father's Name": "Mr. Saurabh Jha",
+      "Address": "Bhuvaneswar, India",
+      "Semester": "6th Semester"
     }
   ]
 }

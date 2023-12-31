@@ -16,7 +16,7 @@ export let router = createBrowserRouter([
         element: <LandingPage />,
         children: [
           {
-            path: "/login",
+            path: "/",
             element: <Login />,
           },
           {

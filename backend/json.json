@@ -1,36 +1,150 @@
-[
-    {
-        "collegeName": "Siddhant College",
-        "collegeAddress": "pune",
-        "collegeEmail": "siddhantcollege@gmail.com",
-        "collegePrincipal": "Prasad Kadam",
-        "collegeHR" : "Maneesha Dasari",
-        "allDepartments": [
-            "mechanical",
-            "civil",
-            "electrical",
-            "computer science"
-        ],
-        "mechanicalHod": "Lavan Mekala",
-        "civilHod": "Yogita Nikam",
-        "electricalHod": "Hemant Pawar",
-        "computerScienceHod": "Supraja Reddy",
-        "teachingStaff": [
-            "Ganesh Gavane",
-            "Divyanshu",
-            "Shreeraj Kadam",
-            "Adarsa Parida"
-        ],
-        "NonTeachingStaff": [
-            "kiran",
-            "ashish",
-            "janardan",
-            "milind",
-            "rushikesh"
-        ],
-        "allMechStudents" : ["john"],
-        "allcivilStudents" : ["john"],
-        "allElectricalStudents" : ["john"],
-        "allCSStudents" : ["john"]
-    }
-]
+{
+    "nonTechnicalStaff": [
+        {
+            "name": "prasad Doe",
+            "role": "Project Manager",
+            "skills": [
+                "Leadership",
+                "Communication"
+            ],
+            "experience": [
+                {
+                    "company": "ABC Inc.",
+                    "position": "Project Manager",
+                    "years": "5 years"
+                },
+                {
+                    "company": "XYZ Corp.",
+                    "position": "Software Developer",
+                    "years": "3 years"
+                }
+            ],
+            "education": [
+                {
+                    "degree": "Bachelor of Science in Computer Science",
+                    "university": "UCLA"
+                }
+            ],
+            "portfolio": [
+                "https://www.linkedin.com/prasaddoe"
+            ],
+            "references": [
+                "Available upon request"
+            ],
+            "contact": {
+                "email": "prasad.doe@abcinc.com",
+                "phone": "(123) 456-7890",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "CityName",
+                    "state": "ST",
+                    "zipcode": "123"
+                }
+            },
+            "languagesSpoken": [
+                "English",
+                "Spanish"
+            ],
+            "availableForWorkFromHome": true,
+            "salaryExpectations": {
+                "type": "Fixed Salary",
+                "amount": "$12000 - $14000"
+            },
+            "employmentType": "Full Time",
+            "jobTitle": "Senior Software Engineer",
+            "industry": "Tech",
+            "workLocation": "Office",
+            "remoteWorkAllowance": "Yes",
+            "careerGoals": "To advance my career as a software engineer and contribute to cutting edge technology.",
+            "careerLevel": "Mid Career (5+ Years)",
+            "whyJoinUs": "I am looking for a company that values innovation and diversity.",
+            "whatYouCanDo": "I can write clean code, debug complex issues, and communicate effectively with the team.",
+            "whatYouCanContribute": "My skills include leadership, communication, and software development.",
+            "keySkills": "Leadership, Communication, Software Development",
+            "aboutYourself": "A highly motivated professional with a Bachelor's degree in Computer Science.",
+            "resume": "http://bit.ly/prasad_resume",
+            "certifications": [
+                "CISCO Certified Network Associate"
+            ],
+            "githubProfile": "https://www.github.com/prasaddoe",
+            "blogUrl": "http://prasaddoesblog.wordpress.com/",
+            "twitterHandle": "@prasaddoe123",
+            "linkedInProfile": "http://www.linkedin.com/in/prasaddoe",
+            "otherPortofolio": "N/A",
+            "makeOfferNow": false
+        },
+        {
+            "name": "John Doe",
+            "role": "Project Manager",
+            "skills": [
+                "Leadership",
+                "Communication"
+            ],
+            "experience": [
+                {
+                    "company": "ABC Inc.",
+                    "position": "Project Manager",
+                    "years": "5 years"
+                },
+                {
+                    "company": "XYZ Corp.",
+                    "position": "Software Developer",
+                    "years": "3 years"
+                }
+            ],
+            "education": [
+                {
+                    "degree": "Bachelor of Science in Computer Science",
+                    "university": "UCLA"
+                }
+            ],
+            "portfolio": [
+                "https://www.linkedin.com/johndoe"
+            ],
+            "references": [
+                "Available upon request"
+            ],
+            "contact": {
+                "email": "john.doe@abcinc.com",
+                "phone": "(123) 456-7890",
+                "address": {
+                    "street": "123 Main St",
+                    "city": "CityName",
+                    "state": "ST",
+                    "zipcode": "123"
+                }
+            },
+            "languagesSpoken": [
+                "English",
+                "Spanish"
+            ],
+            "availableForWorkFromHome": true,
+            "salaryExpectations": {
+                "type": "Fixed Salary",
+                "amount": "$12000 - $14000"
+            },
+            "employmentType": "Full Time",
+            "jobTitle": "Senior Software Engineer",
+            "industry": "Tech",
+            "workLocation": "Office",
+            "remoteWorkAllowance": "Yes",
+            "careerGoals": "To advance my career as a software engineer and contribute to cutting edge technology.",
+            "careerLevel": "Mid Career (5+ Years)",
+            "whyJoinUs": "I am looking for a company that values innovation and diversity.",
+            "whatYouCanDo": "I can write clean code, debug complex issues, and communicate effectively with the team.",
+            "whatYouCanContribute": "My skills include leadership, communication, and software development.",
+            "keySkills": "Leadership, Communication, Software Development",
+            "aboutYourself": "A highly motivated professional with a Bachelor's degree in Computer Science.",
+            "resume": "http://bit.ly/john_resume",
+            "certifications": [
+                "CISCO Certified Network Associate"
+            ],
+            "githubProfile": "https://www.github.com/johndoe",
+            "blogUrl": "http://johndoesblog.wordpress.com/",
+            "twitterHandle": "@johndoe123",
+            "linkedInProfile": "http://www.linkedin.com/in/johndoe",
+            "otherPortofolio": "N/A",
+            "makeOfferNow": false
+        }
+    ]
+}

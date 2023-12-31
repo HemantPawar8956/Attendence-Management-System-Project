@@ -1,5 +1,29 @@
 {
-    "siddhant College" : {
-        
-    }
+    
+    "departments": [
+        {
+            "name": "Computer Science",
+            "faculty": [
+                "prasad"
+            ],
+            "non_teaching_staff": [
+                "adarsa"
+            ],
+            "students": [
+                "ganesh"
+            ]
+        },
+        {
+            "name": "Mathematics",
+            "faculty": [
+                "hemant"
+            ],
+            "non_teaching_staff": [
+                "shreeraj"
+            ],
+            "students": [
+                "divyanshu"
+            ]
+        }
+    ]
 }

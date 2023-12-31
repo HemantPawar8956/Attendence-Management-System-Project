@@ -8,7 +8,7 @@ export let router = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: "/Home",
+        path: "/",
         element: <Home />,
       },
     ],

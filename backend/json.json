@@ -1,0 +1,36 @@
+[
+    {
+        "collegeName": "Siddhant College",
+        "collegeAddress": "pune",
+        "collegeEmail": "siddhantcollege@gmail.com",
+        "collegePrincipal": "Prasad Kadam",
+        "collegeHR" : "Maneesha Dasari",
+        "allDepartments": [
+            "mechanical",
+            "civil",
+            "electrical",
+            "computer science"
+        ],
+        "mechanicalHod": "Lavan Mekala",
+        "civilHod": "Yogita Nikam",
+        "electricalHod": "Hemant Pawar",
+        "computerScienceHod": "Supraja Reddy",
+        "teachingStaff": [
+            "Ganesh Gavane",
+            "Divyanshu",
+            "Shreeraj Kadam",
+            "Adarsa Parida"
+        ],
+        "NonTeachingStaff": [
+            "kiran",
+            "ashish",
+            "janardan",
+            "milind",
+            "rushikesh"
+        ],
+        "allMechStudents" : ["john"],
+        "allcivilStudents" : ["john"],
+        "allElectricalStudents" : ["john"],
+        "allCSStudents" : ["john"]
+    }
+]

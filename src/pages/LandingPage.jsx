@@ -5,10 +5,7 @@ import AxiosInstance from "../AxiosInstance/AMSAxiosInstance";
 
 const LandingPage = () => {
   let handleChnage = async () => {
-    let { data } = await AxiosInstance.get("/1");
-    console.log(data);
-    let payload = { id: 10, course8: "Math", course9: "Physics" };
-    await AxiosInstance.post("/", payload);
+
   };
   return (
     <section className="w-screen h-[91vh] bg-red-300">

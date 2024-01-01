@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react";
+import AsideComp from "./../components/AsideComp";
 
 const Home = () => {
   let fetchFunction = async () => {
@@ -14,9 +15,9 @@ const Home = () => {
   fetchFunction()
   return (
     <div>
-      home comp
+      
     </div>
   )
 }
 
-export default Home
+export default Home;

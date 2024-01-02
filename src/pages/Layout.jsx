@@ -8,7 +8,7 @@ const Layout = () => {
       <NavComponent />
       <Outlet/>
     </section>
-  );
-};
+  )
+}
 
 export default Layout;

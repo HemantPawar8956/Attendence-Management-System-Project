@@ -5,6 +5,7 @@ import LandingPage from "./../pages/LandingPage";
 import Login from "./../pages/Login";
 import SignUp from "./../pages/SignUp";
 import Register from "./../pages/Register";
+import Loader from "./../components/Loader";
 
 export let router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ export let router = createBrowserRouter([
       {
         path: "/Home",
         element: <Home />,
+      },
+      {
+        path: "/loader",
+        element: <Loader />,
       },
     ],
   },

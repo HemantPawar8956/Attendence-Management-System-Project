@@ -1,6 +1,8 @@
 {
   "Teaching-Staff": [
     {
+      "username": "Hemant Pawar",
+      "password": "Hemant@8956",
       "Teacher-name": "Hemant Pawar",
       "id": "Alpha-001",
       "department": "Computer",
@@ -13,9 +15,14 @@
       "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
       "office_hour": "Friday 3:30 pm - 4:30 pm",
       "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
-      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
+      "Assignes-Subjects": [
+        "WebTechnology",
+        " basics of Machine Learning"
+      ]
     },
     {
+      "username": "Prasad Kadam",
+      "password": "PrasadK@123",
       "Teacher-name": "Prasad Kadam",
       "id": "Alpha-001",
       "department": "Computer",
@@ -28,9 +35,14 @@
       "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
       "office_hour": "Friday 3:30 pm - 4:30 pm",
       "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
-      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
+      "Assignes-Subjects": [
+        "WebTechnology",
+        " basics of Machine Learning"
+      ]
     },
     {
+      "username": "Yogita Nikam",
+      "password": "YogitaN@123",
       "Teacher-name": "Yogita Nikam",
       "id": "Alpha-003",
       "department": "Civil",
@@ -43,12 +55,17 @@
       "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
       "office_hour": "Friday 3:30 pm - 4:30 pm",
       "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
-      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
+      "Assignes-Subjects": [
+        "WebTechnology",
+        " basics of Machine Learning"
+      ]
     }
   ],
   "Non-Teaching-staff": [
     {
-      "staff-name": "VIkram Koli",
+      "username": "Vikram Koli",
+      "password": "VikramK@123",
+      "staff-name": "Vikram Koli",
       "id": "alpha-NS-001",
       "role": "Librarian",
       "contact no.": "+91-431-2376520",
@@ -60,6 +77,8 @@
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
     },
     {
+      "username": "Wasin Sayyed",
+      "password": "WasimS@123",
       "staff-name": "wasim sayyed",
       "id": "alpha-NS-002",
       "role": "Mech-lab-Assistant",
@@ -72,6 +91,8 @@
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
     },
     {
+      "username": "Mangesh Moharakar",
+      "password": "MangeshM@123",
       "staff-name": "Mangesh Moharkar",
       "id": "alpha-NS-005",
       "role": "Electrical-lab-Assistant",
@@ -86,6 +107,8 @@
   ],
   "Electrical": [
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -96,6 +119,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -106,6 +131,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -118,6 +145,8 @@
   ],
   "Mechanical": [
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -128,6 +157,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -138,6 +169,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -150,6 +183,8 @@
   ],
   "Civil": [
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -160,6 +195,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -170,6 +207,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -182,6 +221,8 @@
   ],
   "Computer": [
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -192,6 +233,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -202,6 +245,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -214,6 +259,8 @@
   ],
   "IT": [
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -224,6 +271,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -234,6 +283,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -246,6 +297,8 @@
   ],
   "ECE": [
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -256,6 +309,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",
@@ -266,6 +321,8 @@
       "Semester": "6th Semester"
     },
     {
+      "username": "Saurabh jha",
+      "password": "SaurabhJ@123",
       "Name": "Saurabh Jha",
       "ID": "beta-EL-001",
       "Year": "Final Year",

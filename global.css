@@ -1,3 +1,67 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+#signupPageSection {
+    background-image: url(./src/assets/images/students_09.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+}
+
+#loginPageSection {
+    background-image: url(./src/assets/images/7605885.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 20vh;
+}
+
+#logoBlock {
+    background-image: url(./src/assets/images/amsLogo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #loginMainDiv,
+    #signupMainDiv {
+        flex-direction: column;
+    }
+}
+
+#enterpriseDiv {
+    background-image: url(./src/assets/images/44242.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+}
+#enterpriseDiv1 {
+    background-image: url(./src/assets/images/7923178.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+}
+#enterpriseDiv2 {
+    background-image: url(./src/assets/images/4073695.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25vw;
+}
+#enterpriseMainDiv::-webkit-scrollbar {
+    display: none;
+  }

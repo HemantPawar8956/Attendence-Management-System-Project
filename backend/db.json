@@ -94,7 +94,8 @@
       "Contact No.": "+91-9999999999",
       "Father's Name": "Mr. Saurabh Jha",
       "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Semester": "6th Semester",
+      "emailId":"saurabh@gmail.com"
     },
     {
       "Name": "Saurabh Jha",
@@ -104,7 +105,9 @@
       "Contact No.": "+91-9999999999",
       "Father's Name": "Mr. Saurabh Jha",
       "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Semester": "6th Semester",
+      "emailId":"saurabh@gmail.com"
+
     },
     {
       "Name": "Saurabh Jha",
@@ -114,7 +117,9 @@
       "Contact No.": "+91-9999999999",
       "Father's Name": "Mr. Saurabh Jha",
       "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Semester": "6th Semester",
+      "emailId":"saurabh@gmail.com"
+
     }
   ],
   "Mechanical": [

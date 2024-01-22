@@ -4,29 +4,27 @@ import { NavLink } from "react-router-dom";
 const NavComponent = () => {
   let element = [
     {
-      path: "/login",
+      path: "/",
       Name: "Login",
     },
     {
       path: "/signup",
       Name: "SignUp",
     },
-    {
-      path: "/register",
-      Name: "Register",
-    },
+
+
   ];
   return (
-    <section className="w-[100%] h-[9vh] bg-slate-600 flex justify-center">
+    <section className="w-[100%] h-[9vh]  flex justify-center">
       <nav className="w-[97%] h-[95%] flex justify-between">
-        <div className="w-[15%] h-[100%] border-2">LOgo</div>
-        <div className="w-[22%] h-[100%] px-2 border-2 flex justify-between items-center">
-          {element.map((ele) => {
+        <div className="w-[15%] h-[110%] mt-1" id="logoBlock"></div>
+        <div className="w-[22%] h-[100%] px-2 flex justify-between items-center pt-5">
+          {element.map((ele, ind) => {
             return (
-              <NavLink
+              <NavLink key={ind+1}
                 to={ele.path}
                 className={({ isActive }) =>
-                  isActive ? "py-2 px-5 text-lg rounded-md bg-violet-500" : "py-2 px-5 text-lg rounded-md"
+                  isActive ? "py-1 px-5 text-lg rounded-md bg-orange-400 text-white" : "py-1 px-5 text-lg rounded-md "
                 }
               >
                 {ele.Name}
@@ -35,6 +33,7 @@ const NavComponent = () => {
           })}
         </div>
       </nav>
+
     </section>
   );
 };

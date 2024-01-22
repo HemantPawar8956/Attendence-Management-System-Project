@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import AxiosInstance from "../AxiosInstance/AMSAxiosInstance";
+import bgImg from "../assets/images/21421.jpg"
 // import axios from "axios";
 
 const LandingPage = () => {
@@ -11,9 +12,9 @@ const LandingPage = () => {
     await AxiosInstance.post("/", payload);
   };
   return (
-    <section className="w-screen h-[91vh] bg-red-300">
+    <section className="w-27% h-80vh">
       <Outlet />
-      <button onClick={handleChnage}>Click to add</button>
+      {/* <button onClick={handleChnage}>Click to add</button> */}
     </section>
   );
 };

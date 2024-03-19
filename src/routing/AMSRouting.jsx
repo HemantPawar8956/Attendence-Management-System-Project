@@ -8,8 +8,9 @@ import Register from "./../pages/Register";
 import Loader from "./../components/Loader";
 import Students from "./../components/Students";
 import Trainers from "./../components/Trainers";
-import Staffs from "./../components/Staffs";
 import Trackers from "./../components/Trackers";
+import StaffsLogin from "../pages/StaffsLogin";
+import OfficeStaffs from "../components/OfficeStaffs";
 
 export let router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ export let router = createBrowserRouter([
             element: <Login />,
           },
           {
+            path: "/staffslogin",
+            element: <StaffsLogin />,
+          },
+          {
             path: "/signup",
             element: <SignUp />,
           },
@@ -32,7 +37,6 @@ export let router = createBrowserRouter([
             path: "/register",
             element: <Register />,
           },
-          
         ],
       },
       {
@@ -48,8 +52,8 @@ export let router = createBrowserRouter([
             element: <Trainers />,
           },
           {
-            path: "/home/staffs",
-            element: <Staffs />,
+            path: "/home/OfficeStaffs",
+            element: <OfficeStaffs />,
           },
           {
             path: "/home/tracker",

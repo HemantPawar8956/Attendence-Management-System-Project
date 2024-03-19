@@ -7,8 +7,9 @@ import { GlobalVariable } from "../contextApi/GlobalContext";
 
 const SignUp = () => {
   let navigate = useNavigate();
-  let { loginType, loginTypes, setLoginType, newUserValid } =
+  let { loginType,staffsLogin, loginTypes, setLoginType, newUserValid } =
     useContext(GlobalVariable);
+    let [signUpType,setSignUpType]=useState(loginTypes)
   let [credentials, setCredentials] = useState({
     fullName: "",
     email: "",
@@ -70,7 +71,7 @@ const SignUp = () => {
       />
       <article className="">
         <div className="w-[100%] flex justify-evenly">
-          {loginTypes.map((ele, index) => {
+          {signUpType.map((ele, index) => {
             return (
               <button
                 className="text-lg px-3 py-1 border-2"
@@ -78,6 +79,8 @@ const SignUp = () => {
                 onClick={() => {
                   setLoginType(ele.value);
                   setCredentials({ ...credentials, role: ele.label });
+                  ele.label == "Staffs" &&
+                    (setLoginType("Trackers"), setSignUpType(staffsLogin));
                 }}
               >
                 {ele.label}

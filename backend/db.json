@@ -52,7 +52,7 @@
       "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
     }
   ],
-  "Staffs": [
+  "Office-Staffs": [
     {
       "username": "Vikram Koli",
       "password": "VikramK@123",
@@ -96,7 +96,7 @@
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
     }
   ],
-  "trackers": [
+  "Trackers": [
     {
       "username": "Harsha",
       "password": "Harsha@123",
@@ -110,6 +110,41 @@
       "Department": "",
       "Office Hour": "Monday to Friday from 10 am to 6 pm",
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
+    }
+  ],
+  "HRs": [
+    {
+      "username": "Mangesh Moharakar",
+      "password": "MangeshM@123",
+      "staff-name": "Mangesh Moharkar",
+      "id": "alpha-NS-005",
+      "role": "Electrical-lab-Assistant",
+      "contact no.": "+91-431-2376520",
+      "Email ID": "mangeshm@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "Designation": "Electrical Lab Assistant",
+      "Department": "Electrical",
+      "Office Hour": "Monday to Friday from 10 am to 6 pm",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
+    }
+  ],
+  "Managers": [
+    {
+      "username": "Hemant Vijay Pawar",
+      "password": "Hemant@8956",
+      "Teacher-name": "Hemant Pawar",
+      "id": "1972",
+      "department": "Computer",
+      "designation": "Associate Professor",
+      "email": "hemantpawar@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "image": "https://www.cs.iitk.ac.in/users/prakashk/images/Paras2018.jpg",
+      "phone": "+91-431-2376520",
+      "specialization": "Artificial Intelligence",
+      "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
+      "office_hour": "Friday 3:30 pm - 4:30 pm",
+      "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
     }
   ],
   "students": [

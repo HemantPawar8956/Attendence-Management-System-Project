@@ -29,20 +29,36 @@ const GlobalContext = ({ children }) => {
   let [loginType, setLoginType] = useState("Trainer");
   let loginTypes = [
     {
-      value: "trainer",
+      value: "Trainer",
       label: "Trainer",
     },
     {
-      value: "staffs",
+      value: "Trackers",
       label: "Staffs",
+      
     },
     {
-      value: "students",
+      value: "Students",
       label: "Students",
     },
+  ];
+
+  let staffsLogin = [
     {
-      value: "trackers",
+      value: "Trackers",
       label: "Tracker",
+    },
+    {
+      value: "HRs",
+      label: "HR",
+    },
+    {
+      value: "Managers",
+      label: "Manager",
+    },
+    {
+      value: "Office-staffs",
+      label: "Office-Staffs",
     },
   ];
 
@@ -51,7 +67,15 @@ const GlobalContext = ({ children }) => {
   }, [loginType]);
   return (
     <Provider
-      value={{userData, userLogin, loginType, loginTypes, setLoginType, newUserValid }}
+      value={{
+        userData,
+        userLogin,
+        loginType,
+        loginTypes,
+        setLoginType,
+        newUserValid,
+        staffsLogin
+      }}
     >
       {children}
     </Provider>

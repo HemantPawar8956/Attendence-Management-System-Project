@@ -1,5 +1,4 @@
 import React, { useContext, useState } from "react";
-import AxiosInstance from "./../AxiosInstance/AMSAxiosInstance";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalVariable } from "../contextApi/GlobalContext";
@@ -11,12 +10,13 @@ const Login = (payload) => {
     username: "",
     password: "",
     isLoggedIn: false,
-    role: "trainer",
+    role: "Trainer",
   });
 
   let { username, password, isLoggedIn, role } = credentials;
-  let { userLogin, loginType, loginTypes, setLoginType } =
+  let { userLogin, loginType, loginTypes, setLoginType ,staffsLogin} =
     useContext(GlobalVariable);
+    let [staffLoginType,setstaffLoginType]=useState(loginTypes)
   let handlechange = (e) => {
     let { name, value } = e.target;
     setCredentials({ ...credentials, isLoggedIn: true, [name]: value });
@@ -35,7 +35,7 @@ const Login = (payload) => {
         username: "",
         password: "",
         isLoggedIn: false,
-        role: "trainer",
+        role: "Trainer",
       });
     } catch (error) {
       toast("Error");
@@ -57,7 +57,7 @@ const Login = (payload) => {
       />
       <article className="">
         <div className="w-[100%] flex justify-evenly">
-          {loginTypes.map((ele, index) => {
+          {staffLoginType.map((ele, index) => {
             return (
               <button
                 className="text-lg px-3 py-1 border-2"
@@ -65,6 +65,8 @@ const Login = (payload) => {
                 onClick={() => {
                   setLoginType(ele.value);
                   setCredentials({ ...credentials, role: ele.value });
+                  ele.label == "Staffs" &&
+                    (setLoginType("Trackers"),setstaffLoginType(staffsLogin));
                 }}
               >
                 {ele.label}
@@ -73,7 +75,7 @@ const Login = (payload) => {
           })}
         </div>
 
-        <h1 className="text-xl w-[100%] text-center">{loginType}'s Login</h1>
+        <h1 className="text-xl w-[100%] text-center">{loginType} Login</h1>
         <form onSubmit={handleSubmit}>
           <div className="field">
             <label htmlFor="username" className="label">

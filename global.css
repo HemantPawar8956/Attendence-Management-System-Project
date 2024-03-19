@@ -8,6 +8,22 @@
     transform: rotate(1turn);
   }
 } */
+.tracker section {
+  width: 50%;
+  height: 50%;
+  border: 5px solid black;
+}
+
+.tracker section section {
+  width: 80%;
+  height: 100%;
+  border: 5px solid rgb(5, 244, 188);
+}
+.tracker section section div {
+  height: 100%;
+  width: 50% !important;
+  padding: 0 !important;
+}
 @keyframes loading-dash {
   0% {
     stroke-dasharray: 1, 200;

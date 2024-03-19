@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+import QRCodeScanner from "./QRCodeScanner";
 
 const Trackers = () => {
   return (
-    <div>
-     Trackers 
-    </div>
-  )
-}
+    <article className="w-[83%] tracker">
+      <QRCodeScanner />
+    </article>
+  );
+};
 
-export default Trackers
+export default Trackers;

@@ -25,6 +25,7 @@ const GlobalContext = ({ children }) => {
     let { data } = await AxiosInstance.get(`/${loginType}`);
     setUserData(data);
   };
+  console.log(userData);
   let [loginType, setLoginType] = useState("Trainer");
   let loginTypes = [
     {
@@ -50,7 +51,7 @@ const GlobalContext = ({ children }) => {
   }, [loginType]);
   return (
     <Provider
-      value={{ userLogin, loginType, loginTypes, setLoginType, newUserValid }}
+      value={{userData, userLogin, loginType, loginTypes, setLoginType, newUserValid }}
     >
       {children}
     </Provider>

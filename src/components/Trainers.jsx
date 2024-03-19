@@ -2,9 +2,9 @@ import React from 'react'
 
 const Trainers = () => {
   return (
-    <div>
+    <article className='w-[83%]'>
       Trainers
-    </div>
+    </article>
   )
 }
 

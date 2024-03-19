@@ -6,6 +6,10 @@ import Login from "./../pages/Login";
 import SignUp from "./../pages/SignUp";
 import Register from "./../pages/Register";
 import Loader from "./../components/Loader";
+import Students from "./../components/Students";
+import Trainers from "./../components/Trainers";
+import Staffs from "./../components/Staffs";
+import Trackers from "./../components/Trackers";
 
 export let router = createBrowserRouter([
   {
@@ -28,11 +32,30 @@ export let router = createBrowserRouter([
             path: "/register",
             element: <Register />,
           },
+          
         ],
       },
       {
-        path: "/Home",
+        path: "/home",
         element: <Home />,
+        children: [
+          {
+            path: "/home/students",
+            element: <Students />,
+          },
+          {
+            path: "/home/trainer",
+            element: <Trainers />,
+          },
+          {
+            path: "/home/staffs",
+            element: <Staffs />,
+          },
+          {
+            path: "/home/tracker",
+            element: <Trackers />,
+          },
+        ],
       },
       {
         path: "/loader",

@@ -3,40 +3,56 @@ import AxiosInstance from "./../AxiosInstance/AMSAxiosInstance";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
+import { GlobalVariable } from "../contextApi/GlobalContext";
 
 const SignUp = () => {
   let navigate = useNavigate();
+  let { loginType, loginTypes, setLoginType, newUserValid } =
+    useContext(GlobalVariable);
   let [credentials, setCredentials] = useState({
+    fullName: "",
+    email: "",
     username: "",
     password: "",
-    loading: false,
-    role: "student",
+    isLoggedIn: false,
+    role: loginType,
   });
 
-  let { username, password, loading, role } = credentials;
+  let { username, password, isLoggedIn, role, fullName, email } = credentials;
+
   let handlechange = (e) => {
     let { name, value } = e.target;
-    setCredentials({ ...credentials, [name]: value });
+    setCredentials({ ...credentials, isLoggedIn: true, [name]: value });
   };
   let handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let { data } = await AxiosInstance.post(`Teaching-Staff`, credentials);
-      data.id != undefined
-        ? toast("Signup Succesfully")
-        : toast("User allready Exits");
+      let valid = newUserValid(credentials);
+      console.log(valid);
+      let createUser = valid == undefined ? true : false;
 
+      if (createUser) {
+        toast("Signup Succesfully");
+        let { data } = await AxiosInstance.post(`/${loginType}`, credentials);
+        console.log(data);
+
+        setTimeout(() => {
+          navigate(`/`);
+        }, 2000);
+      } else {
+        toast("User Allready Exists");
+      }
       setCredentials({
+        fullName: "",
+        email: "",
         username: "",
         password: "",
-        loading: false,
-        role: "",
+        isLoggedIn: false,
+        role: loginType,
       });
     } catch (error) {
-      console.log(error);
       toast("Error");
     }
-    navigate("/");
   };
   console.log(credentials);
   return (
@@ -53,8 +69,37 @@ const SignUp = () => {
         theme="dark"
       />
       <article className="">
-        <h1 className="text-xl w-[100%] text-center">SignUp</h1>
+        <div className="w-[100%] flex justify-evenly">
+          {loginTypes.map((ele, index) => {
+            return (
+              <button
+                className="text-lg px-3 py-1 border-2"
+                key={index + 1}
+                onClick={() => {
+                  setLoginType(ele.value);
+                  setCredentials({ ...credentials, role: ele.label });
+                }}
+              >
+                {ele.label}
+              </button>
+            );
+          })}
+        </div>
+        <h1 className="text-xl w-[100%] text-center">Signup as {loginType}</h1>
         <form onSubmit={handleSubmit}>
+          <div className="field">
+            <label htmlFor="fullName" className="label">
+              Full Name:
+            </label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              value={fullName}
+              onChange={handlechange}
+              required
+            />
+          </div>
           <div className="field">
             <label htmlFor="username" className="label">
               Username:
@@ -65,6 +110,20 @@ const SignUp = () => {
               id="username"
               value={username}
               onChange={handlechange}
+              required
+            />
+          </div>
+          <div className="field">
+            <label htmlFor="email" className="label">
+              Email Id :
+            </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={email}
+              onChange={handlechange}
+              required
             />
           </div>
           <div className="field">
@@ -77,6 +136,7 @@ const SignUp = () => {
               id="password"
               value={password}
               onChange={handlechange}
+              required
             />
           </div>
           <div className="field">

@@ -1,12 +1,13 @@
-import React, { createContext, useState } from "react";
+import React, { createContext, useEffect, useState } from "react";
+import AxiosInstance from "../AxiosInstance/AMSAxiosInstance";
 
 export let GlobalVariable = createContext("");
 let { Provider } = GlobalVariable;
 const GlobalContext = ({ children }) => {
-  let Authentication = (data, credentials) => {
-    console.log(data);
+  let [userData, setUserData] = useState([]);
+  let userLogin = (credentials) => {
     console.log(credentials);
-    let valid = data.find(
+    let valid = userData.find(
       (ele) =>
         ele.username == credentials.username &&
         ele.password == credentials.password
@@ -14,24 +15,43 @@ const GlobalContext = ({ children }) => {
     return valid;
   };
 
-  let [loginType, setLoginType] = useState("Trainers");
+  let newUserValid = (credentials) => {
+    console.log(credentials);
+    let valid = userData.find((ele) => ele.username == credentials.username);
+    return valid;
+  };
+
+  let fetchUsers = async () => {
+    let { data } = await AxiosInstance.get(`/${loginType}`);
+    setUserData(data);
+  };
+  let [loginType, setLoginType] = useState("Trainer");
   let loginTypes = [
     {
-      value: "Trainer",
+      value: "trainer",
       label: "Trainer",
     },
     {
-      value: "Staffs",
+      value: "staffs",
       label: "Staffs",
     },
     {
-      value: "Students",
+      value: "students",
       label: "Students",
+    },
+    {
+      value: "trackers",
+      label: "Tracker",
     },
   ];
 
+  useEffect(() => {
+    fetchUsers();
+  }, [loginType]);
   return (
-    <Provider value={{ Authentication, loginType, loginTypes, setLoginType }}>
+    <Provider
+      value={{ userLogin, loginType, loginTypes, setLoginType, newUserValid }}
+    >
       {children}
     </Provider>
   );

@@ -6,16 +6,16 @@ import { GlobalVariable } from "../contextApi/GlobalContext";
 import { useNavigate } from "react-router-dom";
 
 const Login = (payload) => {
-  let navigate=useNavigate();
+  let navigate = useNavigate();
   let [credentials, setCredentials] = useState({
     username: "",
     password: "",
     isLoggedIn: false,
-    role: "",
+    role: "trainer",
   });
 
   let { username, password, isLoggedIn, role } = credentials;
-  let { Authentication, loginType, loginTypes, setLoginType } =
+  let { userLogin, loginType, loginTypes, setLoginType } =
     useContext(GlobalVariable);
   let handlechange = (e) => {
     let { name, value } = e.target;
@@ -23,27 +23,25 @@ const Login = (payload) => {
   };
   let handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("login");
     try {
-      let { data } = await AxiosInstance.get(`/students`);
-      console.log(data);
-      // let valid = Authentication(data, credentials);
+      let valid = userLogin(credentials);
       console.log(valid);
       valid == undefined
         ? toast("Wrong Login/ Password")
-        : toast("Succesfully login"),navigate("");
-       
+        : toast("Succesfully login"),
+        navigate(`/home/${loginType}`);
+
       setCredentials({
         username: "",
         password: "",
         isLoggedIn: false,
-        role: "",
+        role: "trainer",
       });
-      
     } catch (error) {
       toast("Error");
     }
   };
+  console.log(credentials);
   return (
     <section className="w-[35%] border-2 h-[70%] m-auto">
       <ToastContainer
@@ -66,6 +64,7 @@ const Login = (payload) => {
                 key={index + 1}
                 onClick={() => {
                   setLoginType(ele.value);
+                  setCredentials({ ...credentials, role: ele.value });
                 }}
               >
                 {ele.label}
@@ -101,9 +100,18 @@ const Login = (payload) => {
             />
           </div>
           <div className="field">
-            <button type="submit" className="border-2">
-              Login
-            </button>
+            {username != "" && password != "" && role != "" ? (
+              <button type="submit" className="border-2">
+                Signup
+              </button>
+            ) : (
+              <button type="submit" className="border-2" disabled>
+                Loading...
+              </button>
+            )}
+          </div>
+          <div className="field">
+            <button className="border-2">Forgot Password</button>
           </div>
         </form>
       </article>

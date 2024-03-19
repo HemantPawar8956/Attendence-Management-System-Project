@@ -96,6 +96,22 @@
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
     }
   ],
+  "trackers": [
+    {
+      "username": "Harsha",
+      "password": "Harsha@123",
+      "staff-name": "Harsha Moharkar",
+      "id": "alpha-NS-005",
+      "role": "Tracker",
+      "contact no.": "+91-431-2376520",
+      "Email ID": "Harsha@iitk.ac.in",
+      "DOJ": "20-12-2018",
+      "Designation": "Counsellor",
+      "Department": "",
+      "Office Hour": "Monday to Friday from 10 am to 6 pm",
+      "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
+    }
+  ],
   "students": [
     {
       "Electrical": [

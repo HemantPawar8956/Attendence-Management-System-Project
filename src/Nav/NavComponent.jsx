@@ -16,7 +16,7 @@ const NavComponent = () => {
     <section className="w-[100%] h-[9vh] bg-slate-600 flex justify-center">
       <nav className="w-[97%] h-[95%] flex justify-between">
         <div className="w-[15%] h-[100%] border-2">LOgo</div>
-        <div className="w-[22%] h-[100%] px-2 border-2 flex justify-between items-center">
+        <div className="w-[22%] h-[100%] px-2  flex justify-evenly items-center">
           {element.map((ele, index) => {
             return (
               <NavLink

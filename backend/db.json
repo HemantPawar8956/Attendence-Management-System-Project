@@ -1,5 +1,5 @@
 {
-  "Teaching-Staff": [
+  "Trainer": [
     {
       "username": "Hemant Pawar",
       "password": "Hemant@8956",
@@ -15,10 +15,7 @@
       "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
       "office_hour": "Friday 3:30 pm - 4:30 pm",
       "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
-      "Assignes-Subjects": [
-        "WebTechnology",
-        " basics of Machine Learning"
-      ]
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
     },
     {
       "username": "Prasad Kadam",
@@ -35,10 +32,7 @@
       "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
       "office_hour": "Friday 3:30 pm - 4:30 pm",
       "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
-      "Assignes-Subjects": [
-        "WebTechnology",
-        " basics of Machine Learning"
-      ]
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
     },
     {
       "username": "Yogita Nikam",
@@ -55,13 +49,10 @@
       "educational_qualification": "PhD in Computer Science & Technology from IIT Kanpur (2014),Tech in Electronics & Telecommunications from Gujarat Technological University (2008)",
       "office_hour": "Friday 3:30 pm - 4:30 pm",
       "subjects_taught": "Data Structures, Algorithms, Operating Systems, Database Management System",
-      "Assignes-Subjects": [
-        "WebTechnology",
-        " basics of Machine Learning"
-      ]
+      "Assignes-Subjects": ["WebTechnology", " basics of Machine Learning"]
     }
   ],
-  "Non-Teaching-staff": [
+  "Staffs": [
     {
       "username": "Vikram Koli",
       "password": "VikramK@123",
@@ -105,232 +96,246 @@
       "Image": "https://media-exp1.licdn.com/dms/image/C5603AQHX"
     }
   ],
-  "Electrical": [
+  "students": [
     {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Electrical": [
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        }
+      ]
     },
     {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Mechanical": [
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        }
+      ]
     },
     {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    }
-  ],
-  "Mechanical": [
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Civil": [
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        }
+      ]
     },
     {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "Computer": [
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        }
+      ]
     },
     {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    }
-  ],
-  "Civil": [
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "IT": [
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        }
+      ]
     },
     {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    }
-  ],
-  "Computer": [
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    }
-  ],
-  "IT": [
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    }
-  ],
-  "ECE": [
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
-    },
-    {
-      "username": "Saurabh jha",
-      "password": "SaurabhJ@123",
-      "Name": "Saurabh Jha",
-      "ID": "beta-EL-001",
-      "Year": "Final Year",
-      "Admission-Date": "20-12-2020",
-      "Contact No.": "+91-9999999999",
-      "Father's Name": "Mr. Saurabh Jha",
-      "Address": "Bhuvaneswar, India",
-      "Semester": "6th Semester"
+      "ECE": [
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        },
+        {
+          "username": "Saurabh jha",
+          "password": "SaurabhJ@123",
+          "Name": "Saurabh Jha",
+          "ID": "beta-EL-001",
+          "Year": "Final Year",
+          "Admission-Date": "20-12-2020",
+          "Contact No.": "+91-9999999999",
+          "Father's Name": "Mr. Saurabh Jha",
+          "Address": "Bhuvaneswar, India",
+          "Semester": "6th Semester"
+        }
+      ]
     }
   ]
 }

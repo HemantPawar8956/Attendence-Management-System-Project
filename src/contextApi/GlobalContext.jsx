@@ -13,8 +13,28 @@ const GlobalContext = ({ children }) => {
     );
     return valid;
   };
-  
-  return <Provider value={{ Authentication }}>{children}</Provider>;
+
+  let [loginType, setLoginType] = useState("Trainers");
+  let loginTypes = [
+    {
+      value: "Trainer",
+      label: "Trainer",
+    },
+    {
+      value: "Staffs",
+      label: "Staffs",
+    },
+    {
+      value: "Students",
+      label: "Students",
+    },
+  ];
+
+  return (
+    <Provider value={{ Authentication, loginType, loginTypes, setLoginType }}>
+      {children}
+    </Provider>
+  );
 };
 
 export default GlobalContext;

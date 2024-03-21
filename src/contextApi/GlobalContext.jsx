@@ -6,7 +6,6 @@ let { Provider } = GlobalVariable;
 const GlobalContext = ({ children }) => {
   let [userData, setUserData] = useState([]);
   let userLogin = (credentials) => {
-    console.log(credentials);
     let valid = userData.find(
       (ele) =>
         ele.username == credentials.username &&
@@ -22,6 +21,7 @@ const GlobalContext = ({ children }) => {
   };
 
   let fetchUsers = async () => {
+    console.log(loginType);
     let { data } = await AxiosInstance.get(`/${loginType}`);
     setUserData(data);
   };
@@ -35,7 +35,6 @@ const GlobalContext = ({ children }) => {
     {
       value: "Trackers",
       label: "Staffs",
-      
     },
     {
       value: "Students",
@@ -74,7 +73,7 @@ const GlobalContext = ({ children }) => {
         loginTypes,
         setLoginType,
         newUserValid,
-        staffsLogin
+        staffsLogin,
       }}
     >
       {children}

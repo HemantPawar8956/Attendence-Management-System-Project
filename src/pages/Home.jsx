@@ -4,10 +4,9 @@ import { Outlet } from "react-router-dom";
 
 const Home = () => {
   return (
-    <section className="w-screen h-[91vh] bg-red-800 flex">
-      <AsideComp />
+    <article className="w-[100%] h-[100vh]">
       <Outlet />
-    </section>
+    </article>
   );
 };
 

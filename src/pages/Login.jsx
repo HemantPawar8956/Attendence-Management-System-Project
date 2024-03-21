@@ -14,9 +14,9 @@ const Login = (payload) => {
   });
 
   let { username, password, isLoggedIn, role } = credentials;
-  let { userLogin, loginType, loginTypes, setLoginType ,staffsLogin} =
+  let { userLogin, loginType, loginTypes, setLoginType, staffsLogin } =
     useContext(GlobalVariable);
-    let [staffLoginType,setstaffLoginType]=useState(loginTypes)
+  let [staffLoginType, setstaffLoginType] = useState(loginTypes);
   let handlechange = (e) => {
     let { name, value } = e.target;
     setCredentials({ ...credentials, isLoggedIn: true, [name]: value });
@@ -25,11 +25,12 @@ const Login = (payload) => {
     e.preventDefault();
     try {
       let valid = userLogin(credentials);
-      console.log(valid);
       valid == undefined
         ? toast("Wrong Login/ Password")
-        : toast("Succesfully login"),
-        navigate(`/home/${loginType}`);
+        : (toast("Succesfully login"),
+          setTimeout(() => {
+            navigate(`/home/${loginType}`, { state: valid });
+          }, 2000));
 
       setCredentials({
         username: "",
@@ -66,7 +67,7 @@ const Login = (payload) => {
                   setLoginType(ele.value);
                   setCredentials({ ...credentials, role: ele.value });
                   ele.label == "Staffs" &&
-                    (setLoginType("Trackers"),setstaffLoginType(staffsLogin));
+                    (setLoginType("Trackers"), setstaffLoginType(staffsLogin));
                 }}
               >
                 {ele.label}
@@ -104,7 +105,7 @@ const Login = (payload) => {
           <div className="field">
             {username != "" && password != "" && role != "" ? (
               <button type="submit" className="border-2">
-                Signup
+                Login
               </button>
             ) : (
               <button type="submit" className="border-2" disabled>

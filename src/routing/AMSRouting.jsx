@@ -9,8 +9,9 @@ import Loader from "./../components/Loader";
 import Students from "./../components/Students";
 import Trainers from "./../components/Trainers";
 import Trackers from "./../components/Trackers";
-import StaffsLogin from "../pages/StaffsLogin";
 import OfficeStaffs from "../components/OfficeStaffs";
+import HR from "./../components/HR";
+import Manager from "./../components/Manager";
 
 export let router = createBrowserRouter([
   {
@@ -24,10 +25,6 @@ export let router = createBrowserRouter([
           {
             path: "/",
             element: <Login />,
-          },
-          {
-            path: "/staffslogin",
-            element: <StaffsLogin />,
           },
           {
             path: "/signup",
@@ -56,8 +53,16 @@ export let router = createBrowserRouter([
             element: <OfficeStaffs />,
           },
           {
-            path: "/home/tracker",
+            path: "/home/Trackers",
             element: <Trackers />,
+          },
+          {
+            path: "/home/HRs",
+            element: <HR />,
+          },
+          {
+            path: "/home/Managers",
+            element: <Manager />,
           },
         ],
       },

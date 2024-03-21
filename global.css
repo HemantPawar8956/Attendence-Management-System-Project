@@ -8,21 +8,19 @@
     transform: rotate(1turn);
   }
 } */
-.tracker section {
-  width: 50%;
-  height: 50%;
-  border: 5px solid black;
-}
 
-.tracker section section {
-  width: 80%;
-  height: 100%;
-  border: 5px solid rgb(5, 244, 188);
+.createUser {
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.tracker section section div {
-  height: 100%;
-  width: 50% !important;
-  padding: 0 !important;
+.HomeChildrens {
+  width: 82%;
+}
+.Qrpage {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Qrpage .Qrcodes {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.799);
 }
 @keyframes loading-dash {
   0% {
@@ -36,5 +34,19 @@
   to {
     stroke-dasharray: 90, 150;
     stroke-dashoffset: -120px;
+  }
+}
+@media only screen and (max-width: 680px) {
+  /* .HomeNav {
+    display: none;
+  }
+  .AsideBar {
+    display: block;
+  } */
+  .createUser {
+    height: 100vh;
+  }
+  .HomeChildrens {
+    width: 83%;
   }
 }

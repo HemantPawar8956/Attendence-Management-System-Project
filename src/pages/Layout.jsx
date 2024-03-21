@@ -5,10 +5,9 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <section>
-      <NavComponent />
-      <Outlet/>
+      <Outlet />
     </section>
-  )
-}
+  );
+};
 
 export default Layout;

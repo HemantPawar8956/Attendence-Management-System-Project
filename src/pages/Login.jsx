@@ -30,7 +30,7 @@ const Login = (payload) => {
         : (toast("Succesfully login"),
           setTimeout(() => {
             navigate(`/home/${loginType}`, { state: valid });
-          }, 2000));
+          }, 1500));
 
       setCredentials({
         username: "",

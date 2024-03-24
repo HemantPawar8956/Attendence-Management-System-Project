@@ -12,6 +12,11 @@ import Trackers from "./../components/Trackers";
 import OfficeStaffs from "../components/OfficeStaffs";
 import HR from "./../components/HR";
 import Manager from "./../components/Manager";
+import Batches from "./../components/SideBarComponents/Batches";
+import Attendence from "../components/SideBarComponents/Attendence";
+import Certificates from "../components/SideBarComponents/Certificates";
+import Dashboard from "./../components/SideBarComponents/Dashboard";
+import axios from "axios";
 
 export let router = createBrowserRouter([
   {
@@ -55,6 +60,24 @@ export let router = createBrowserRouter([
           {
             path: "/home/Trackers",
             element: <Trackers />,
+            children: [
+              {
+                path: "/home/Trackers/Batches",
+                element: <Batches />,
+                loader: () => {
+                  return axios.get(" http://localhost:5000/Batches");
+                  
+                },
+              },
+              {
+                path: "/home/Trackers/Attendence",
+                element: <Attendence />,
+              },
+              {
+                path: "/home/Trackers/Dashboard",
+                element: <Dashboard />,
+              },
+            ],
           },
           {
             path: "/home/HRs",

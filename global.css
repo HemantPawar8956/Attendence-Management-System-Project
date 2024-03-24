@@ -16,11 +16,24 @@
   width: 82%;
 }
 .Qrpage {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.682);
+  /* filter: opacity(0.934); */
+}
+.ProfilePage {
+  background-color: rgba(0, 0, 0, 0.682);
 }
 .Qrpage .Qrcodes {
   color: white;
   background-color: rgba(0, 0, 0, 0.799);
+}
+.profileImg {
+  background-color: rgba(55, 61, 83, 0.347);
+}
+.asideEle {
+  font-size: 19px;
+}
+.batches:nth-child(odd) {
+  background-color: rgba(240, 248, 255, 0.137);
 }
 @keyframes loading-dash {
   0% {

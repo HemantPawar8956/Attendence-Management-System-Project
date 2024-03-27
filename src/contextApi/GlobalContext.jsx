@@ -6,6 +6,7 @@ let { Provider } = GlobalVariable;
 const GlobalContext = ({ children }) => {
   let [openQR, setOpenQR] = useState(false);
   let [openProfile, setOpenProfile] = useState(false);
+  let [openSearch, setOpenSearch] = useState(false);
   let [userData, setUserData] = useState([]);
   let userLogin = (credentials) => {
     let valid = userData.find(
@@ -80,6 +81,8 @@ const GlobalContext = ({ children }) => {
         setOpenQR,
         openProfile,
         setOpenProfile,
+        openSearch,
+        setOpenSearch,
       }}
     >
       {children}

@@ -32,8 +32,51 @@
 .asideEle {
   font-size: 19px;
 }
+.batches {
+  height: 90%;
+  /* background-color: blue; */
+  /* border: 2px solid transparent; */
+}
+.childrens section {
+  background-color: rgba(0, 0, 0, 0.712);
+}
 .batches:nth-child(odd) {
-  background-color: rgba(240, 248, 255, 0.137);
+  background-color: rgba(240, 248, 255, 0.13);
+}
+.takeBtn {
+  padding: 5px 15px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+.batches td .viewBtn {
+  padding: 4px 15px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: rgb(31, 88, 212);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.childrens {
+  background-image: url(https://assets-global.website-files.com/6344c9cef89d6f2270a38908/6577a3fad90e3e00cba0c022_8%2B%20Common%20Tech%20Stack%20for%20Web%20Development%20A%2B%20Guide.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+.Qrscanner section {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  padding: 10px;
+}
+.Qrscanner section div {
+  height: 30%;
+  width: 100%;
+}
+.Qrscanner section div video {
+  height: 90% !important;
 }
 @keyframes loading-dash {
   0% {
@@ -61,5 +104,11 @@
   }
   .HomeChildrens {
     width: 83%;
+  }
+  .AsideBar {
+    display: none;
+  }
+  .childrens {
+    width: 100%;
   }
 }

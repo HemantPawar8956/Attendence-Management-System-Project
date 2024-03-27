@@ -17,6 +17,8 @@ import Attendence from "../components/SideBarComponents/Attendence";
 import Certificates from "../components/SideBarComponents/Certificates";
 import Dashboard from "./../components/SideBarComponents/Dashboard";
 import axios from "axios";
+import QRCodeScanner from "./../components/QRCodeScanner";
+import UserBatches from './../components/SideBarComponents/UserBatches';
 
 export let router = createBrowserRouter([
   {
@@ -48,6 +50,24 @@ export let router = createBrowserRouter([
           {
             path: "/home/students",
             element: <Students />,
+            children: [
+              {
+                path: "/home/students/Dashboard",
+                element: <Dashboard />,
+              },
+              {
+                path: "/home/students/Batches",
+                element: <UserBatches />,
+              },
+              {
+                path: "/home/students/certificates",
+                element: <Certificates />,
+              },
+              {
+                path: "/home/students/Attendence",
+                element: <Attendence />,
+              },
+            ],
           },
           {
             path: "/home/trainer",
@@ -62,20 +82,19 @@ export let router = createBrowserRouter([
             element: <Trackers />,
             children: [
               {
+                path: "/home/Trackers/Dashboard",
+                element: <Dashboard />,
+              },
+              {
                 path: "/home/Trackers/Batches",
                 element: <Batches />,
                 loader: () => {
                   return axios.get(" http://localhost:5000/Batches");
-                  
                 },
               },
               {
                 path: "/home/Trackers/Attendence",
                 element: <Attendence />,
-              },
-              {
-                path: "/home/Trackers/Dashboard",
-                element: <Dashboard />,
               },
             ],
           },
@@ -86,6 +105,10 @@ export let router = createBrowserRouter([
           {
             path: "/home/Managers",
             element: <Manager />,
+          },
+          {
+            path: "/home/scanner",
+            element: <QRCodeScanner />,
           },
         ],
       },

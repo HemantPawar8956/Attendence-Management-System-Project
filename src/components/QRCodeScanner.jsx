@@ -46,19 +46,19 @@ const QRCodeScanner = () => {
     fetchUsers();
   }, []);
   return (
-    <section className="flex">
+    <section className="Qrscanner h-[100%] w-[100%] bg-black flex">
       {/* QR Code scanner component */}
       <QrReader
         delay={1000}
         onError={handleError}
         onScan={handleScan}
         onResult={showResult}
-        style={{ width: "10%", height: "200px", border: "1px solid" }}
+        style={{ width: "50%", height: "200px", border: "1px solid" }}
       />
 
       {/* Display scanned data */}
       {userData != "" && (
-        <div className="ScannedData">
+        <div className="ScannedData text-white py-6  px-3">
           <h2>Scanned Data:</h2>
           <p className="h-48">{userData?.username}</p>
         </div>

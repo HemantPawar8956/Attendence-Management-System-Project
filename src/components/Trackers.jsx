@@ -55,11 +55,11 @@ const Trackers = () => {
             setOpenProfile,
           }}
         />
-        <article className="w-[82%] h-[100%] bg-slate-700 rounded-lg">
+        <article className=" childrens w-[82%] h-[100%] bg-slate-700 rounded-lg overflow-hidden">
           <Outlet />
         </article>
       </section>
-      {openProfile && <Profile data={{ state, setOpenProfile}}/>}
+      {openProfile && <Profile data={{ state, setOpenProfile }} />}
       {openQR && <QRCodes data={{ state, setOpenQR, openQR }} />}
     </main>
   );

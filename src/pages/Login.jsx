@@ -3,6 +3,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalVariable } from "../contextApi/GlobalContext";
 import { useNavigate } from "react-router-dom";
+import { CgRename } from "react-icons/cg";
+import { FaUserCircle } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { PiPasswordThin } from "react-icons/pi";
 
 const Login = (payload) => {
   let navigate = useNavigate();
@@ -44,7 +48,7 @@ const Login = (payload) => {
   };
   console.log(credentials);
   return (
-    <section className="w-[35%] border-2 h-[70%] m-auto">
+    <section className="w-[80%]  h-[85%] m-auto">
       <ToastContainer
         position="top-center"
         autoClose={5000}
@@ -56,12 +60,12 @@ const Login = (payload) => {
         pauseOnHover
         theme="dark"
       />
-      <article className="">
-        <div className="w-[100%] flex justify-evenly">
+      <article className=" rounded-xl  bg-slate-900 flex flex-col justify-evenly border-[rgb(2,2,2)] h-[100%] shadow-[0px_0px_10px_bg-slate-400] shadow-slate-400">
+        <div className="w-[100%] flex justify-evenly mt-[30px]">
           {staffLoginType.map((ele, index) => {
             return (
               <button
-                className="text-lg px-3 py-1 border-2"
+                className="font-medium  text-blue-400 rounded-[8px] border-[1px]  border-[white] px-[1.2em] py-[0.6em] text-[1em] [font-family:inherit] bg-[#1a1a1a] cursor-pointer [transition:border-color_0.25s] hover:border-[#646cff]  outline-[4px_auto_-webkit-focus-ring-color]"
                 key={index + 1}
                 onClick={() => {
                   setLoginType(ele.value);
@@ -77,44 +81,55 @@ const Login = (payload) => {
         </div>
 
         <h1 className="text-xl w-[100%] text-center">{loginType} Login</h1>
-        <form onSubmit={handleSubmit}>
-          <div className="field">
-            <label htmlFor="username" className="label">
-              Username:
-            </label>
+        <form onSubmit={handleSubmit} className=" h-[60%]">
+          <div className="w-full h-[35px] flex justify-center mt-[20px] gap-[10px] ">
+            <FaUserCircle className="text-[26px] text-white" />
             <input
               type="text"
-              name="username"
-              id="username"
+              placeholder="UserName"
               value={username}
+              name="username"
               onChange={handlechange}
+              className="w-[30%] border-[none] outline-none mix-blend-luminosity bg-transparent"
             />
           </div>
-          <div className="field">
-            <label htmlFor="password" className="label">
-              Password:
-            </label>
+          <div className="border-b-2 border-white w-1/3 ml-[30%]"></div>
+
+          <div className="w-full h-[35px] flex justify-center mt-[20px] gap-[10px] ">
+            <PiPasswordThin className="text-[26px] text-white" />
             <input
-              type="password"
-              name="password"
-              id="password"
+              type="text"
+              placeholder="Password"
               value={password}
+              name="password"
               onChange={handlechange}
+              className="w-[30%] border-[none] outline-none mix-blend-luminosity bg-transparent"
             />
           </div>
+          <div className="border-b-2 border-white w-1/3 ml-[30%]"></div>
+
           <div className="field">
             {username != "" && password != "" && role != "" ? (
-              <button type="submit" className="border-2">
+              <button
+                type="submit"
+                className="font-medium  [text-decoration:inherit] rounded-[8px] border-[1px]  border-[transparent] px-[1.2em] py-[0.6em] text-[1em] [font-family:inherit] bg-[#1a1a1a] cursor-pointer [transition:border-color_0.25s] hover:border-[#646cff] text-[#535bf2] outline-[4px_auto_-webkit-focus-ring-color] mt-[20px]"
+              >
                 Login
               </button>
             ) : (
-              <button type="submit" className="border-2" disabled>
+              <button
+                type="submit"
+                className="font-medium  [text-decoration:inherit] rounded-[8px] border-[1px]  border-[white] px-[1.2em] py-[0.6em] text-[1em] [font-family:inherit] bg-[#1a1a1a] cursor-pointer [transition:border-color_0.25s] hover:border-[#646cff] text-[#535bf2] outline-[4px_auto_-webkit-focus-ring-color] mt-[20px]"
+                disabled
+              >
                 Loading...
               </button>
             )}
           </div>
           <div className="field">
-            <button className="border-2">Forgot Password</button>
+            <button className=" mt-4 text-white border-b">
+              Forgot Password
+            </button>
           </div>
         </form>
       </article>

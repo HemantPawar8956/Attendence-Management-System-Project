@@ -46,7 +46,7 @@ const QRCodeScanner = () => {
     fetchUsers();
   }, []);
   return (
-    <section className="Qrscanner h-[100%] w-[100%] bg-black flex">
+    <section className="Qrscanner h-[100%] w-[100%] bg-slate-900 flex">
       {/* QR Code scanner component */}
       <QrReader
         delay={1000}

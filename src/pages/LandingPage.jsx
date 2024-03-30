@@ -1,13 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import NavComponent from "../Nav/NavComponent";
+// import NavComponent from "../Nav/NavComponent";
 // import axios from "axios";
 
 const LandingPage = () => {
   let handleChnage = async () => {};
   return (
-    <section className="w-[100%] h-[100vh] bg-red-300 ">
-      <NavComponent />
+    <section className="h-screen  font-[Inter,_system-ui,_Avenir,_Helvetica,_Arial,_sans-serif] leading-normal font-normal [color-scheme:light_dark] text-[rgba(255,_255,_255,_0.87)] bg-slate-950  mx-[auto] my-[0] p-8 text-center">
+      {/* <NavComponent /> */}
       <article className="w-[100%] h-[91vh] flex justify-end items-center flex-wrap">
         <Outlet />
       </article>

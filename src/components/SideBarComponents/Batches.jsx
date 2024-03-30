@@ -1,14 +1,15 @@
-import React, { useContext } from "react";
-import { Link, NavLink, useLoaderData } from "react-router-dom";
+import React, { useContex, useContext } from "react";
+import { useLoaderData } from "react-router-dom";
 import { IoBookOutline } from "react-icons/io5";
 import { BiSolidHome } from "react-icons/bi";
-import { toast } from "react-toastify";
 import { GlobalVariable } from "./../../contextApi/GlobalContext";
 
 const Batches = () => {
   let { data } = useLoaderData();
-  let { openSearch, setOpenSearch } = useContext(GlobalVariable);
+  let { openSearch, setOpenSearch, setTrainerTimings, setBatchType } =
+    useContext(GlobalVariable);
   console.log(data);
+
   let closeSearchPanel = (e) => {
     e.stopPropagation();
     setOpenSearch(false);
@@ -30,7 +31,7 @@ const Batches = () => {
         <div className="w-[600px] h-[30px] border-2"></div>
         <div className="w-[600px] h-[38px]  flex items-center ">
           <button
-            className="h-[90%] w-[13%] border-2 text-white bg-blue-700 rounded"
+            className="h-[90%] w-[11%] text-white bg-blue-600 hover:bg-blue-800 rounded"
             onClick={openSearchPanel}
           >
             Search
@@ -48,7 +49,7 @@ const Batches = () => {
         )}
         <table cellSpacing={10} cellPadding={5} className=" h-[100%] w-[100%]">
           <thead className=" text-white ">
-            <tr>
+            <tr className="bg-black">
               <th>Attendance</th>
               <th>Batch Code</th>
               <th>Subject</th>
@@ -72,15 +73,20 @@ const Batches = () => {
                   className="border-2 text-white border-transparent hover:border-b-slate-800 p-2 batches"
                 >
                   <td>
-                    <NavLink to={"/home/scanner"} className="takeBtn">
+                    <button
+                      className="takeBtn"
+                      onClick={() => {
+                        setBatchType(true);
+                      }}
+                    >
                       Take
-                    </NavLink>
+                    </button>
                   </td>
                   <td className="text-green-400">{ele.BatchCode}</td>
                   <td>{ele.Subject}</td>
                   <td>{ele.Trainer_Name}</td>
                   <td>
-                    <p className="w-[60px] h-[30px] bg-green-700 rounded flex items-center justify-center">
+                    <p className="w-[60px] h-[30px] bg-green-600 rounded flex items-center justify-center">
                       Active
                     </p>
                   </td>
@@ -103,10 +109,17 @@ const Batches = () => {
                   <td>Offline</td>
                   <td>Weekday</td>
                   <td>
-                    <Link className="viewBtn">View</Link>
+                    <button
+                      className="viewBtn "
+                      onClick={() => {
+                        setTrainerTimings(true);
+                      }}
+                    >
+                      View
+                    </button>
                   </td>
                   <td>
-                    <button className="border-2 py-1 px-3 rounded bg-red-500 ">
+                    <button className=" py-1 px-3 rounded bg-red-500  hover:bg-red-600">
                       Verified
                     </button>
                   </td>

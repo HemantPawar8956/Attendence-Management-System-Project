@@ -4,15 +4,7 @@ import { TbLogout2 } from "react-icons/tb";
 import Image from "../assets/bridge-8291058_640.webp";
 
 const AsideComp = ({
-  data: {
-    state,
-    element,
-    pathname,
-    openQR,
-    setOpenQR,
-    openProfile,
-    setOpenProfile,
-  },
+  data: { element, openQR, setOpenQR, setOpenProfile },
 }) => {
   console.log(openQR);
   console.log(setOpenQR);

@@ -8,6 +8,8 @@ const GlobalContext = ({ children }) => {
   let [openProfile, setOpenProfile] = useState(false);
   let [openSearch, setOpenSearch] = useState(false);
   let [userData, setUserData] = useState([]);
+  let [trainerTimings, setTrainerTimings] = useState(false);
+  let [batchType, setBatchType] = useState(false);
   let userLogin = (credentials) => {
     let valid = userData.find(
       (ele) =>
@@ -83,6 +85,10 @@ const GlobalContext = ({ children }) => {
         setOpenProfile,
         openSearch,
         setOpenSearch,
+        trainerTimings,
+        setTrainerTimings,
+        batchType,
+        setBatchType,
       }}
     >
       {children}

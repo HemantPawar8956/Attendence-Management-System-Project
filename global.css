@@ -15,7 +15,8 @@
 .HomeChildrens {
   width: 82%;
 }
-.Qrpage {
+.Qrpage,
+.TrainerTimings {
   background-color: rgba(0, 0, 0, 0.682);
   /* filter: opacity(0.934); */
 }
@@ -41,7 +42,7 @@
   background-color: rgba(0, 0, 0, 0.712);
 }
 .batches:nth-child(odd) {
-  background-color: rgba(240, 248, 255, 0.13);
+  background-color: rgba(240, 248, 255, 0.205);
 }
 .takeBtn {
   padding: 5px 15px;
@@ -49,11 +50,17 @@
   color: black;
   border-radius: 5px;
 }
+.takeBtn:hover {
+  background-color: rgba(228, 227, 227, 0.847);
+}
 .batches td .viewBtn {
   padding: 4px 15px;
-  border: 1px solid;
+  /* border: 1px solid; */
   border-radius: 5px;
   background-color: rgb(31, 88, 212);
+}
+.batches td .viewBtn:hover {
+  background-color: rgb(23, 69, 169);
 }
 ::-webkit-scrollbar {
   display: none;
@@ -77,6 +84,7 @@
 }
 .Qrscanner section div video {
   height: 90% !important;
+  /* filter: drop-shadow(0px 0px 10px white); */
 }
 @keyframes loading-dash {
   0% {

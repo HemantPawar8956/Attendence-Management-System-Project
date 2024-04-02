@@ -1,5 +1,4 @@
 import React from "react";
-import AsideComp from "./../components/AsideComp";
 import { Outlet } from "react-router-dom";
 
 const Home = () => {

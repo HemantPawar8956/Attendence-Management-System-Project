@@ -12,6 +12,7 @@ const Profile = ({ data: { state, setOpenProfile } }) => {
     role: state?.role,
   });
 
+  let [showEditProfile, setEditProfile] = useState(false);
   let urls = [
     {
       icon: <FaGithub />,
@@ -36,6 +37,14 @@ const Profile = ({ data: { state, setOpenProfile } }) => {
     e.stopPropagation();
     setOpenProfile(false);
   };
+  let showEditProfilePanel = (e) => {
+    e.stopPropagation();
+    setEditProfile(true);
+  };
+  let closeEditProfilePanel = (e) => {
+    e.stopPropagation();
+    setEditProfile(false);
+  };
   return (
     <section
       className="w-[100%] h-[100vh] flex justify-center items-center fixed ProfilePage"
@@ -48,12 +57,25 @@ const Profile = ({ data: { state, setOpenProfile } }) => {
           setOpenProfile(true);
         }}
       >
-        <h1 className="w-[100%] flex justify-between px-2">
+        <h1 className="w-[100%] flex justify-between px-2 relative">
           <FaAngleLeft
             className="hover:bg-slate-400 text-2xl p-1 rounded-md"
             onClick={closeProfile}
           />
-          <MdMenuOpen className="text-2xl rounded-md" />
+          <MdMenuOpen
+            className="text-2xl rounded-md "
+            onMouseEnter={showEditProfilePanel}
+            onMouseLeave={closeEditProfilePanel}
+          />
+          {showEditProfile && (
+            <div
+              className="float-right absolute right-5 top-5 border-2 py-1 px-3 text-white bg-slate-800 opacity-60 rounded  "
+              onMouseEnter={showEditProfilePanel}
+              onMouseLeave={closeEditProfilePanel}
+            >
+              Edit Profile
+            </div>
+          )}
         </h1>
         <section className="w-[49%]  h-[90%]">
           <div className="w-[100%] h-[70%] border-2">Profile Image</div>

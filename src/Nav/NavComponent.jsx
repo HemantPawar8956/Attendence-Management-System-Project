@@ -13,10 +13,9 @@ const NavComponent = () => {
     },
   ];
   return (
-    <section className="w-[100%] h-[9vh] bg-slate-800 flex justify-center">
-      <nav className="w-[97%] h-[98%] flex justify-between">
-        <div className="w-[15%] h-[100%] border-2">LOgo</div>
-        <div className="w-[22%] h-[100%] px-2  flex justify-evenly items-center">
+    <section className="w-[9%] h-[50%] bg-slate-800 ">
+      <nav className="w-[97%] h-[98%] flex justify-center flex-wrap">
+        <div className="w-[90%] h-[100%]  flex justify-evenly  flex-wrap items-center border-2">
           {element.map((ele, index) => {
             return (
               <NavLink

@@ -18,7 +18,8 @@ import Certificates from "../components/SideBarComponents/Certificates";
 import Dashboard from "./../components/SideBarComponents/Dashboard";
 import axios from "axios";
 import QRCodeScanner from "./../components/QRCodeScanner";
-import UserBatches from './../components/SideBarComponents/UserBatches';
+import UserBatches from "./../components/SideBarComponents/UserBatches";
+import PageNotFound from "./../pages/PageNotFound";
 
 export let router = createBrowserRouter([
   {
@@ -115,6 +116,10 @@ export let router = createBrowserRouter([
       {
         path: "/loader",
         element: <Loader />,
+      },
+      {
+        path: "*",
+        element: <PageNotFound />,
       },
     ],
   },

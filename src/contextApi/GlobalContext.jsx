@@ -10,6 +10,7 @@ const GlobalContext = ({ children }) => {
   let [userData, setUserData] = useState([]);
   let [trainerTimings, setTrainerTimings] = useState(false);
   let [batchType, setBatchType] = useState(false);
+  let [isVerified, setIsVerified] = useState(false);
   let userLogin = (credentials) => {
     let valid = userData.find(
       (ele) =>

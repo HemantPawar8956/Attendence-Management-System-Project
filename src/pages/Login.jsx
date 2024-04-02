@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { ToastContainer, toast } from "react-toastify";
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { GlobalVariable } from "../contextApi/GlobalContext";
 import { useNavigate } from "react-router-dom";
@@ -49,17 +49,7 @@ const Login = (payload) => {
   console.log(credentials);
   return (
     <section className="w-[80%]  h-[85%] m-auto">
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        pauseOnHover
-        theme="dark"
-      />
+
       <article className=" rounded-xl  bg-slate-900 flex flex-col justify-evenly border-[rgb(2,2,2)] h-[100%] shadow-[0px_0px_10px_bg-slate-400] shadow-slate-400">
         <div className="w-[100%] flex justify-evenly mt-[30px]">
           {staffLoginType.map((ele, index) => {
@@ -90,10 +80,10 @@ const Login = (payload) => {
               value={username}
               name="username"
               onChange={handlechange}
-              className="w-[30%] border-[none] outline-none mix-blend-luminosity bg-transparent"
+              className="w-[30%] border-none outline-none mix-blend-luminosity bg-transparent"
             />
           </div>
-          <div className="border-b-2 border-white w-1/3 ml-[30%]"></div>
+          <div className="border-b-2 border-white w-1/3 ml-[33%]"></div>
 
           <div className="w-full h-[35px] flex justify-center mt-[20px] gap-[10px] ">
             <PiPasswordThin className="text-[26px] text-white" />
@@ -103,10 +93,10 @@ const Login = (payload) => {
               value={password}
               name="password"
               onChange={handlechange}
-              className="w-[30%] border-[none] outline-none mix-blend-luminosity bg-transparent"
+              className="w-[30%] border-none outline-none mix-blend-luminosity bg-transparent"
             />
           </div>
-          <div className="border-b-2 border-white w-1/3 ml-[30%]"></div>
+          <div className="border-b-2 border-white w-1/3 ml-[33%]"></div>
 
           <div className="field">
             {username != "" && password != "" && role != "" ? (

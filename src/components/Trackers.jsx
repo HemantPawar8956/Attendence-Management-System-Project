@@ -13,6 +13,7 @@ import Profile from "./SideBarComponents/Profile";
 import TrainerTimings from "./TrainerTimings";
 import { useRef } from "react";
 import { toast } from "react-toastify";
+import BatchVerified from "./BatchVerified";
 
 const Trackers = () => {
   let {
@@ -24,6 +25,8 @@ const Trackers = () => {
     setTrainerTimings,
     batchType,
     setBatchType,
+    isVerified,
+    setIsVerified,
   } = useContext(GlobalVariable);
   let { state, pathname } = useLocation();
   let BatchTypeRef = useRef();
@@ -163,6 +166,7 @@ const Trackers = () => {
       )}
       {openProfile && <Profile data={{ state, setOpenProfile }} />}
       {trainerTimings && <TrainerTimings data={{ state, setTrainerTimings }} />}
+      {isVerified && <BatchVerified />}
       {openQR && <QRCodes data={{ state, setOpenQR, openQR }} />}
     </main>
   );

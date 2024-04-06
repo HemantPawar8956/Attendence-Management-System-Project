@@ -90,6 +90,8 @@ const GlobalContext = ({ children }) => {
         setTrainerTimings,
         batchType,
         setBatchType,
+        isVerified,
+        setIsVerified,
       }}
     >
       {children}

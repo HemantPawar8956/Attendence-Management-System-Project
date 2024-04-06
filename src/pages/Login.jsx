@@ -5,7 +5,7 @@ import { GlobalVariable } from "../contextApi/GlobalContext";
 import { useNavigate } from "react-router-dom";
 import { CgRename } from "react-icons/cg";
 import { FaUserCircle } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+import { IoChevronBackCircleSharp } from "react-icons/io5";
 import { PiPasswordThin } from "react-icons/pi";
 
 const Login = (payload) => {
@@ -21,6 +21,8 @@ const Login = (payload) => {
   let { userLogin, loginType, loginTypes, setLoginType, staffsLogin } =
     useContext(GlobalVariable);
   let [staffLoginType, setstaffLoginType] = useState(loginTypes);
+
+  //set login credentials
   let handlechange = (e) => {
     let { name, value } = e.target;
     setCredentials({ ...credentials, isLoggedIn: true, [name]: value });
@@ -48,9 +50,17 @@ const Login = (payload) => {
   };
   console.log(credentials);
   return (
-    <section className="w-[80%]  h-[85%] m-auto">
-
-      <article className=" rounded-xl  bg-slate-900 flex flex-col justify-evenly border-[rgb(2,2,2)] h-[100%] shadow-[0px_0px_10px_bg-slate-400] shadow-slate-400">
+    <section className="w-[80%]  h-[85%] m-auto relative">
+      <article className=" rounded-xl  bg-slate-900 flex flex-col justify-evenly border-[hsl(0,0%,1%)] h-[100%] shadow-[0px_0px_10px_bg-slate-400] shadow-slate-400">
+        {loginType != "Trainer" && loginType != "Students" && (
+          <IoChevronBackCircleSharp
+            className="ms-2 text-4xl absolute top-2 text-slate-300"
+            onClick={() => {
+              setstaffLoginType(loginTypes);
+              setLoginType("Trainer");
+            }}
+          />
+        )}
         <div className="w-[100%] flex justify-evenly mt-[30px]">
           {staffLoginType.map((ele, index) => {
             return (

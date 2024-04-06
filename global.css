@@ -9,6 +9,13 @@
   }
 } */
 
+.Navbtn:hover > :not(:hover) {
+  opacity: 0.3;
+}
+.Navbtn a:hover {
+  transition: all 1s 0s;
+  transform: scale(1.05);
+}
 .createUser {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -33,11 +40,6 @@
 .asideEle {
   font-size: 19px;
 }
-.batches {
-  height: 90%;
-  /* background-color: blue; */
-  /* border: 2px solid transparent; */
-}
 .childrens section {
   background-color: rgba(0, 0, 0, 0.712);
 }
@@ -45,8 +47,8 @@
   background-color: rgba(240, 248, 255, 0.205);
 }
 .takeBtn {
-  padding: 5px 15px;
-  background-color: white;
+  padding: 4px 13px;
+  background-color: rgb(232, 231, 231);
   color: black;
   border-radius: 5px;
 }
